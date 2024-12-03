@@ -1,0 +1,107 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.chatContainer {
+    overflow-y: scroll;
+    padding: 0 10px;
+    flex: 1;
+}
+
+.messageBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 5px;
+    background-color: #ffffff;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+.nickname {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.text {
+    font-size: 1rem;
+    word-wrap: break-word;
+    background-color: #efefef;
+    border-radius: 17.5px;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    /* font-size: inherit; */
+    max-width: 690px;
+    padding: 8px 12px;
+    position: relative;
+    /* -webkit-user-select: text; */
+    /* user-select: text; */
+    /* word-break: break-word; */
+}
+
+.btnWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.messageBtn {
+    background-color: #fff;
+    border: none;
+}
+
+.templateContainer {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 8px 0;
+    margin-left: 6px;
+}
+
+.templateItem {
+    list-style-type: none;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    margin-right: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0; /* アイテムが縮小しないようにする */
+}
+
+.inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    font-size: 0.9rem;
+}
+
+.input {
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+.sendBtn {
+    background-color: #557bae;
+    border: none;
+    color: #fefefe;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .inputBox {
+        padding: 0 5px;
+    }
+
+    .input {
+        width: 80%;
+    }
+}

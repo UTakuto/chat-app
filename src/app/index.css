@@ -1,0 +1,39 @@
+/* body {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+} */
+
+.inputBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input {
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+.sendBtn {
+    background-color: #557bae;
+    border: none;
+    color: #fefefe;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .inputBox {
+        height: 100%;
+    }
+
+    .input {
+        width: 80%;
+    }
+}
